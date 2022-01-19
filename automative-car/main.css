@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+
+	color: hsla(0, 0%, 100%, 1);
+
+	height: 100vh;
+}
+
+#header {
+	background-image: url(bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90vh;
+}
+
+.container {
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.nav {
+	padding: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background-color: initial;
+	color: inherit;
+	border: initial;
+	box-shadow: initial;
+
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	justify-content: space-between;
+}
+
+.logo {
+	gap: 0.9375rem;
+}
+
+.logo > span {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 56.25px;
+}
+
+.menu {
+	gap: 1.625rem;
+}
+
+.links {
+	line-height: 28.13px;
+}
+
+.menu > li:first-child > .links {
+	font-weight: 700;
+}
+
+.btn {
+	color: hsla(0, 0%, 100%, 1);
+	background: hsla(194, 100%, 50%, 1);
+
+	font-size: 1.3025rem;
+
+	padding: 0.86875rem 1.52rem;
+}
+
+#hero > h2 {
+	color: hsla(194, 100%, 50%, 1);
+	font-size: 4rem;
+	font-weight: 700;
+
+	line-height: 75px;
+}
+
+#hero > h3 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 42.19px;
+
+	margin: 0 0 2.125rem 0;
+}
+
+#hero > .btn {
+	line-height: 28.13px;
+}
+
+#footer {
+	background: hsla(0, 0%, 0%, 1);
+}
+
+#footer > .nav {
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+.effect {
+	color: hsla(194, 100%, 50%, 1);
+}
