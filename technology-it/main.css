@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: hsla(0, 0%, 100%, 1);
+	color: hsla(0, 0%, 0%, 1);
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	max-width: 1400px;
+}
+
+.nav {
+	height: 25vh;
+	justify-content: space-between;
+}
+
+.menu {
+	list-style: none;
+	gap: 1.4375rem;
+}
+
+.nav > .flex:first-child {
+	gap: 0.8125rem;
+}
+
+.nav > .flex:first-child > .flex {
+	flex-direction: column;
+	align-items: stretch;
+}
+.nav > .flex:first-child > .flex > span {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.nav > .flex:last-child {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.nav > .flex:first-child .links {
+	color: hsla(209, 100%, 48%, 1);
+	font-size: 1.6rem;
+}
+
+.nav > .flex:last-child span {
+	font-size: 3rem;
+	font-weight: 500;
+	align-self: flex-end;
+}
+
+.nav > .flex:last-child .links {
+	font-size: 1.5rem;
+	font-weight: 500;
+
+	color: inherit;
+}
+
+#hero {
+	background-image: url(hero.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 18.0625rem;
+	margin-bottom: 3.5rem;
+}
+
+#effect {
+	color: hsla(209, 100%, 48%, 1);
+}
+
+.services {
+	gap: 3.25rem;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	flex-direction: column;
+	max-width: 287px;
+}
+
+.card > h4 {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 56.25px;
+}
+
+.image {
+	height: 189px;
+	width: 287px;
+	background-image: url(maintenance.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#btn {
+	background: hsla(209, 91%, 54%, 1);
+	color: hsla(0, 0%, 100%, 1);
+	font-size: 2.50625rem;
+	font-weight: 400;
+	padding: 0.6875rem 2.3125rem;
+}
+
+.ctaServices {
+	flex-direction: column;
+}
